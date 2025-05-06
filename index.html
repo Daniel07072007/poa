@@ -5,42 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nuestro blog</title>
   <link rel="stylesheet" href="bootstrap-5.3.5-dist/css/bootstrap.min.css"/>
-  <style>
-    .hero {
-      background-color: #22b843;
-      padding: 2rem 1rem;
-    }
-    .hero h1 {
-      color: #6c757d;
-      font-size: 2.5rem;
-    }
-    .breadcrumb-wrap {
-      background-color: #d3e4fd;
-      padding: 0.5rem 1rem;
-    }
-    .intro {
-      text-align: center;
-      margin: 1.5rem 0;
-    }
-    .blog-footer {
-      background-color: #37393a;
-      color: white;
-      padding: 1.5rem 0;
-    }
-    .blog-footer a {
-      color: white;
-      margin: 0 0.5rem;
-      font-size: 1.4rem;
-    }
-    .card-img-top {
-      max-height: 180px;
-      object-fit: contain;
-      padding: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-
   <header class="hero">
     <div class="container">
       <h1>Nuestro blog</h1>
@@ -51,81 +18,64 @@
     <div class="container">
       <ol class="breadcrumb mb-0">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Blogs</li>
+        <li class="breadcrumb-item active">Blogs</li>
       </ol>
     </div>
   </nav>
 
-  <section class="intro container">
-    <p>En este blog podrás comentar acerca de varios temas relacionados con la programación.</p>
-    <p>¡Solo da clic y comienza a interactuar!</p>
-  </section>
+  <div class="container">
+    <section class="intro">
+      <p>En este blog podrás comentar acerca de varios temas relacionados con la programación.</p>
+      <p>¡Solo da clic y comienza a interactuar!</p>
+    </section>
 
-  <section class="container mb-5">
-    <div class="row g-4">
+    <section class="blog-cards mb-5">
+      <div class="row g-4">
+        <div class="col-md-4" data-category="javascript">
+          <div class="card h-100">
+            <img src="javascript.png" class="card-img-top" alt="Logo JavaScript" />
+            <div class="card-body">
+              <h5>JavaScript</h5>
+              <p>En este espacio podrás resolver dudas, compartir proyectos y tomar nuevas ideas del grupo de colaboradores.</p>
+              <a href="#" class="btn btn-primary">Javascript blog</a>
+            </div>
+          </div>
+        </div>
 
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img
-            src="javascript.png"
-            class="card-img-top"
-            alt="Logo JavaScript"
-          />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">JavaScript</h5>
-            <p class="card-text flex-grow-1">
-              En este espacio podrás resolver dudas, compartir proyectos y tomar nuevas ideas del grupo de colaboradores.
-            </p>
-            <a href="#" class="btn btn-primary mt-2">Javascript blog</a>
+        <div class="col-md-4" data-category="php">
+          <div class="card h-100">
+            <img src="php.png" class="card-img-top" alt="Logo PHP" />
+            <div class="card-body">
+              <h5>PHP</h5>
+              <p>En este espacio podrás resolver dudas, compartir proyectos y tomar nuevas ideas del grupo de colaboradores.</p>
+              <a href="#" class="btn btn-primary">PHP blog</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-category="python">
+          <div class="card h-100">
+            <img src="python.png" class="card-img-top" alt="Logo Python" />
+            <div class="card-body">
+              <h5>Python</h5>
+              <p>En este espacio podrás resolver dudas, compartir proyectos y tomar nuevas ideas del grupo de colaboradores.</p>
+              <a href="#" class="btn btn-primary">Python blog</a>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+  </div>
 
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img
-            src="php.png"
-            class="card-img-top"
-            alt="Logo PHP"
-          />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">PHP</h5>
-            <p class="card-text flex-grow-1">
-              En este espacio podrás resolver dudas, compartir proyectos y tomar nuevas ideas del grupo de colaboradores.
-            </p>
-            <a href="#" class="btn btn-primary mt-2">PHP blog</a>
-          </div>
-        </div>
+  <footer class="blog-footer">
+    <div class="container text-center">
+      <p>Redes sociales</p>
+      <div class="social-links">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
       </div>
-
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
-          <img
-            src="python.png"
-            class="card-img-top"
-            alt="Logo Python"
-          />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Python</h5>
-            <p class="card-text flex-grow-1">
-              En este espacio podrás resolver dudas, compartir proyectos y tomar nuevas ideas del grupo de colaboradores.
-            </p>
-            <a href="#" class="btn btn-primary mt-2">Python blog</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <footer class="blog-footer text-center">
-    <div class="container">
-      <p class="mb-2">Redes sociales</p>
-      <a href="#"><i class="bi bi-facebook"></i></a>
-      <a href="#"><i class="bi bi-whatsapp"></i></a>
-      <a href="#"><i class="bi bi-instagram"></i></a>
     </div>
   </footer>
-
 </body>
 </html>

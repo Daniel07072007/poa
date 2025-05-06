@@ -1,0 +1,37 @@
+.hero {
+  background-color: #80d364a1;
+  padding: 2rem 1rem;
+}
+
+.hero h1 {
+  color: #6c757d;
+  font-size: 2.5rem;
+}
+
+.breadcrumb-wrap {
+  background-color: #d3e4fd;
+  padding: 0.5rem 1rem;
+}
+
+.intro {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.card-img-top {
+  max-height: 180px;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+.blog-footer {
+  background-color: #37393a;
+  color: white;
+  padding: 1.5rem 0;
+}
+
+.blog-footer a {
+  color: white;
+  margin: 0 0.5rem;
+  font-size: 1.4rem;
+}
