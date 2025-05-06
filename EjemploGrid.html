@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+<style>
+    .wrapper{
+        display: grid;
+        border: 2px rgb(0, 0, 0) solid;
+        /* grid-template-columns: 200px 200px 200px; */
+        /* grid-template-columns: 2fr 1fr 3fr; */
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 200px;
+    }
+    .caja{
+        border:2px blueviolet solid;
+    }
+    .footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    text-align: center;
+    padding: 15px;
+    background-color: coral;
+    color: white;
+}
+
+.footer .izquierdo{
+    text-align: left;
+}
+
+.footer .derecho {
+    text-align: right;
+}
+
+</style>
+
+    </head>
+    <body>
+        
+        <h1>sistemas de cuadricula - Gridlayout</h1>
+        <h3>Con CSS 3</h3>
+        <section class="wrapper">
+            <div class="caja red">
+                Primera caja
+            </div>
+            <div class="caja red">
+                Primera caja
+            </div>
+            <div class="caja red">
+                Segunda caja
+            </div>
+            <div class="caja red">
+                Tercera caja
+            </div>
+            <div class="caja red">
+                Cuarta caja
+            </div>
+            <div class="caja red">
+                Quinta caja
+            </div>
+            <div class="caja red">
+                Sexta caja
+            </div>
+
+        </section>
+
+     
+        <footer class="footer">
+            <div class="footer-section">abril 2025</div>
+            <div class="footer-section">todos los derechos reservados</div>
+            <div class="footer-section">contactenos</div>
+        </footer>
+        <script src="" async defer></script>
+    </body>
+</html>

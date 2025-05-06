@@ -1,0 +1,35 @@
+body { 
+    margin: 150px 150px 0px 400px;
+    background-color: rgb(255, 255, 255);
+    background-image: url(../Imagenes/Zhongli.png);
+    background-repeat: repeat-y;
+}
+
+p {
+    color: rgb(72, 255, 0);
+    font-size: 26px;
+    line-height: 26px;
+}
+
+h1 { 
+    color: rgb(179, 255, 0); 
+    font-size: 56px;
+
+}
+
+h2 { 
+    color: rgb(0, 255, 85); 
+    font-size: 56px;
+
+}
+
+
+h3 { 
+    color: rgb(0, 255, 136); 
+    font-size: 56px;
+
+}
+
+strong {
+    font-weight: bold;
+}
